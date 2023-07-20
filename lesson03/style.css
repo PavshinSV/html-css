@@ -121,6 +121,51 @@ a {
     border: none;
 }
 
+.properties {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.property_card {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.property_img {
+    width: 70px;
+    margin-bottom: 25px;
+
+}
+
+.property_header {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+
+.property_text {
+    color: #666;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+    margin-bottom: 25px;
+}
+
+.property_link {
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 16.5px */
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
