@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {}
+
+.header_logo {}
+
+.header_search {}
+
+.header_search_link {}
+
+.search_logo {}
+
+.search_input {}
+
+.header_button {}
+
+.header_button img {}
+
+.top_content {}
+
+.content_img {}
+
+.top_content_text {}
+
+.top_content_text h1 {}
+
+.top_content_text p {}
+
+.hot_offer {}
+
+.offer_card {}
+
+.offer_card_img {}
+
+.offer_card_offer {}
+
+.offer_card_section {}
+
+.fetured_items {}
+
+.fetured_items_header {}
+
+.fetured_items_text {}
+
+.fetured_items_cards {}
+
+.fetured_items_card {}
+
+.fetured_items_card_img {}
+
+.fetured_items_card_header {}
+
+.fetured_items_card_text {}
+
+.fetured_items_card_cost {}
+
+.fetured_items_button {}
