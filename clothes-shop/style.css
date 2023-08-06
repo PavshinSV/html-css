@@ -22,16 +22,29 @@ a {
     padding-bottom: 19px;
     background-color: #222;
     flex-wrap: wrap;
-    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.header_left {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-left: 32px;
+}
+
+.header_right {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-right: 42px;
 }
 
 .header_logo {
     width: 48px;
 }
-
-.header_search {}
-
-.header_search_link {}
 
 .search_logo {
     width: 26px;
@@ -42,8 +55,6 @@ a {
     border: none;
     width: 800px;
 }
-
-.header_button {}
 
 .header_button img {
     height: 30px;
@@ -100,7 +111,6 @@ a {
     margin-top: 65px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 30px;
 }
 
@@ -114,27 +124,9 @@ a {
     width: 100%;
 }
 
-.offer_card_1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-
-.offer_card_2 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-
-.offer_card_3 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-}
-
-.offer_card_4 {
-    grid-row: 2/3;
+.offer_card_big {
     grid-column: 1/4;
 }
-
-.offer_card_img {}
 
 .offer_card_offer {
     width: 100%;
@@ -255,4 +247,37 @@ a {
     background-color: #fff;
     padding: 15px 39px;
     border-color: #FF6A6A;
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+    .centered {
+        padding: 0 calc(50% - 385px);
+    }
+
+    .content_img {
+        height: 368px;
+        margin-left: 90px;
+    }
+
+    .top_content_text h1 {
+        font-size: 44px;
+    }
+
+    .top_content_text p {
+        font-size: 24px;
+    }
+
+    .top_content_text_decorated {
+        font-size: 24px;
+    }
+
+    .hot_offer {
+        gap: 20px;
+    }
+
+    .offer_card {
+        max-height: 160px;
+    }
+
+
 }
