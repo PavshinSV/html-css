@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kelly Slab', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centered {
+    padding: 0 calc(50% - 570px);
+}
+
+.header {
+    display: flex;
+    gap: 35px;
+    align-items: baseline;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    background-color: #222;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header_left {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-left: 32px;
+}
+
+.header_right {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-right: 42px;
+}
+
+.header_logo {
+    width: 48px;
+}
+
+.search_logo {
+    width: 26px;
+}
+
+.search_input {
+    background-color: #222;
+    border: none;
+    width: 800px;
+}
+
+.header_button img {
+    height: 30px;
+}
+
+.top_content {
+    background-color: #F1E4E6;
+    display: flex;
+    justify-content: space-between;
+    /*    gap: 180px;*/
+}
+
+.content_img {
+    height: 764px;
+}
+
+.top_content_text {
+    width: 45%;
+    margin: auto 0;
+    text-align: left;
+    border-left: solid 12px #F16D7F;
+    padding-left: 16px;
+}
+
+.top_content_text h1 {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.top_content_text p {
+    text-transform: uppercase;
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.top_content_text_decorated {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hot_offer {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.offer_card {
+    position: relative;
+    max-height: 260px;
+    overflow: hidden;
+}
+
+.offer_card img {
+    width: 100%;
+}
+
+.offer_card_big {
+    grid-column: 1/4;
+}
+
+.offer_card_offer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.offer_card_section {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: calc(50% + 10px);
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.fetured_items {
+    margin-top: 90px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fetured_items_header {
+    color: #222;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.fetured_items_text {
+    color: #9F9F9F;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+
+.fetured_items_cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fetured_items_card {
+    width: 360px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fetured_items_card_img {
+    height: 420px;
+    width: 360px;
+    object-fit: contain;
+    background-color: #F3EDED;
+}
+
+.first_card img {
+    object-fit: cover;
+}
+
+.fetured_items_card_header {
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fetured_items_card_text {
+    text-align: left;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 18px;
+}
+
+.fetured_items_card_cost {
+    text-align: left;
+    color: #F16D7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fetured_items_button {
+    margin-top: 48px;
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #fff;
+    padding: 15px 39px;
+    border-color: #FF6A6A;
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+    .centered {
+        padding: 0 calc(50% - 385px);
+    }
+
+    .content_img {
+        height: 368px;
+        margin-left: 90px;
+    }
+
+    .top_content_text h1 {
+        font-size: 44px;
+    }
+
+    .top_content_text p {
+        font-size: 24px;
+    }
+
+    .top_content_text_decorated {
+        font-size: 24px;
+    }
+
+    .hot_offer {
+        gap: 20px;
+    }
+
+    .offer_card {
+        max-height: 160px;
+    }
+
+
+}
