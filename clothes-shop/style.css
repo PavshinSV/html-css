@@ -249,6 +249,35 @@ a {
     border-color: #FF6A6A;
 }
 
+.advantages {
+    background-color: #222224;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 103px;
+    padding-bottom: 103px;
+    text-align: center;
+}
+
+.advantages_item_header {
+    color: #FBFBFB;
+    font-size: 19.96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.advantages_item_text {
+    color: #FBFBFB;
+    font-size: 13.972px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
 @media(max-width:1024px) and (min-width:768px) {
     .centered {
         padding: 0 calc(50% - 385px);
@@ -279,5 +308,102 @@ a {
         max-height: 160px;
     }
 
+    .advantages {
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 48px;
+        padding-bottom: 64px;
+        text-align: center;
+        justify-content: center;
+    }
 
+    .advantages_item {
+        max-width: 360px;
+    }
+}
+
+@media (max-width:767px) and (min-width:320px) {
+    .centered {
+        padding: 0 calc(50% - 187.5px);
+    }
+
+    .header_left {
+        margin-left: 16px;
+    }
+
+    .header_right {
+        margin-right: 16px;
+    }
+
+    .profile_logo {
+        display: none;
+    }
+
+    .basket_logo {
+        display: none;
+    }
+
+    .content_img {
+        display: none;
+    }
+
+    .top_content {
+        height: 363px;
+    }
+
+    .top_content_text {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .top_content_text h1 {
+        font-size: 38px;
+    }
+
+    .top_content_text p {
+        font-size: 20px;
+    }
+
+    .top_content_text_decorated {
+        font-size: 20px;
+    }
+
+    .hot_offer {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .offer_card_big img {
+        width: auto;
+        object-fit: contain;
+
+    }
+
+    .offer_card {
+
+        width: 343px;
+        min-height: 111px;
+    }
+
+    .offer_card_offer {
+        font-size: 16px;
+    }
+
+    .offer_card_section {
+        font-size: 24px;
+    }
+
+    .advantages {
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 48px;
+        padding-bottom: 64px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .advantages_item {
+        max-width: 360px;
+    }
 }
