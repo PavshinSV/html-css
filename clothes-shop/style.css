@@ -277,6 +277,47 @@ a {
     line-height: normal;
 }
 
+.feedback {
+    position: relative;
+    /*background-image: url("./img/beach.png");*/
+    height: 448px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.feedback::after {
+    position: absolute;
+    width: 1600px;
+    height: 448px;
+    background: rgba(0, 244, 244, 0.70);
+    z-index: 100;
+}
+
+.feedback_article {
+    margin-top: 97px;
+}
+
+.feedback_article_img {
+    border-radius: 50%;
+}
+
+.feedback_article_text {
+    width: 360px;
+    color: #222224;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feedback_subscribe {
+    margin-top: 150px;
+}
+
+
 
 @media(max-width:1024px) and (min-width:768px) {
     .centered {
